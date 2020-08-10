@@ -2,9 +2,10 @@
     text-align: center;
     color: white;
     background: rgba(72,68,69,1);
-    background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-image: url("https://i.imgur.com/1jX8wjB.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
     border: 1px solid grey;
 }
 /* .col-sm-6 {
@@ -22,4 +23,16 @@ body {
     background: rgba(255, 255, 255, 0.315);
     border: 1px solid rgba(255, 255, 255, 0.474);
     font-size: 30px;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.303);
+    border-radius: 75%;
+    text-align: center;
+}
+.display-4 {
+    background: rgba(70, 68, 68, 0.315);
+    margin: 0 auto;
+    display: inline;
+    padding: 15px;
+    border-radius: 50%;
 }
