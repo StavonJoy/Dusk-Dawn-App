@@ -13,9 +13,9 @@
 // // add event listener for go button
 // // add event listener for dark/light mode button
 // write code for API call and console.log
-	// The town/city input will return a latitude/longitude
-	// use this information to call the 2nd API to return the results
-	// perhaps a function?
+	// // The town/city input will return a latitude/longitude
+	//  //use this information to call the 2nd API to return the results
+    // Change time to user's location time
 // Tweak event listeners so that the results will appear in a variable
 // add a function to handle appending the sunset card
 // add a function to handle appending the sunrise card
@@ -28,14 +28,14 @@
 // variables
 
 // cached element references
-const resRise = document.getElementById('resRise')
-const resSet = document.getElementById('resSet')
+const resRise = document.getElementById('remRise')
+const resSet = document.getElementById('remSet')
 const goBtn = document.getElementById('button-addon1')
-
+const container = document.getElementById('container')
 // event listeners
 
-// resRise.addEventListener('click',) 
-// resSet.addEventListener('click',)
+// resRise.addEventListener('click', console.log('click')) 
+// resSet.addEventListener('click', console.log('click'))
 
 // functions
 
@@ -57,7 +57,8 @@ goBtn.addEventListener('click', () => {
     .then((data) => {
         let rise = data.results.sunrise
         let set = data.results.sunset
-        console.log(rise, set)
+        var date = new Date(rise)
+        console.log(date.toString())
     })
     .catch((err) => {
         console.log(err)
