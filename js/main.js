@@ -28,7 +28,6 @@
 // variables
 
 // cached element references
-const testBtn = document.getElementById('test')
 const resRise = document.getElementById('resRise')
 const resSet = document.getElementById('resSet')
 const goBtn = document.getElementById('button-addon1')
@@ -39,14 +38,9 @@ const goBtn = document.getElementById('button-addon1')
 // resSet.addEventListener('click',)
 
 // functions
-// const getZip = () => {
-//     const zip = document.getElementById('zipcode').value
-//     return zip
-// }
-let latt, long
-let longLatt = ""
 
-const getLocation = (longLatt) => {
+
+goBtn.addEventListener('click', () => {
     fetch(`https://freegeoip.app/json/`)
     .then((response) => {
         return response.json()
@@ -54,13 +48,9 @@ const getLocation = (longLatt) => {
     .then((data) => {
         let latt = data.latitude
         let longt = data.longitude
-        longLatt = `lat=${latt}&lng=${longt}`
+        let longLatt = `lat=${latt}&lng=${longt}`
+        return fetch(`https://api.sunrise-sunset.org/json?${longLatt}&date=today`)
     })
-    .then(sunCatch)
-    
-}
-let sunCatch = (longLatt) => {
-    (fetch(`https://api.sunrise-sunset.org/json?${longLatt}`))
     .then((response) => {
         return response.json()
     })
@@ -72,21 +62,11 @@ let sunCatch = (longLatt) => {
     .catch((err) => {
         console.log(err)
     })
-}
+})
 
 
-goBtn.addEventListener('click', () => getLocation())
+// // take latitude and longitude from getLocation, and plug into URL for next API call
+// // should it be in one function?
 
-// const getSunrise = () => {
-//     fetch("https://api.sunrise-sunset.org/json?lat=41.823872&lng=-71.411987")
-//     .then((response) => {
-//         return response.json()
-//     })
-//     .then((data) => {
-//         let rise = data.results.sunrise
-//         console.log(rise)
-//     })
-//     .catch((err) => {
-//         console.log(err)
-//     })
-// }
+
+
