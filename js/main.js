@@ -38,8 +38,10 @@ const sunSet = document.getElementById('sunset-text')
 
 // event listeners
 
-// resRise.addEventListener('click', console.log('click')) 
-// resSet.addEventListener('click', console.log('click'))
+resRise.addEventListener('click', console.log('click'), () => {
+    sunRise.innerText = ''
+})
+resSet.addEventListener('click', console.log('click'), remove)
 
 // functions
 // const render = (rise, set) => {
@@ -47,8 +49,11 @@ const sunSet = document.getElementById('sunset-text')
 //     sunSet.innerHTML=`The sunset is at ${set}`
 // }
 
-
-goBtn.addEventListener('click', (appendDiv) => {
+const remove = (sunRise, sunSet) => {
+    sunRise.innerText = ''
+    sunSet.innerText = ''
+}
+goBtn.addEventListener('click', () => {
     fetch(`https://freegeoip.app/json/`)
     .then((response) => {
         return response.json()
@@ -85,31 +90,4 @@ goBtn.addEventListener('click', (appendDiv) => {
 
 
 
-// const appendDiv = (rise, set) => {
-//     let newDiv = document.createElement("div")
-//     newDiv.innerHTML = `
-//                         <div class="row">
-//                             <div class="col-sm-6">
-//                                 <div class="card">
-//                                     <div class="card-body">
-//                                         <h5 class="sunrise-title">Today's Sunrise:</h5>
-//                                         <p class="card-text" id="sunrise-text">The sunrise time is ${rise}</p>
-//                                         <p>Greet the new day.</p>
-//                                         <button id="remRise">X</button>
-//                                     </div>
-//                                 </div>
-//                             </div>
-//                             <div class="col-sm-6">
-//                                 <div class="card">
-//                                     <div class="card-body">
-//                                         <h5>Today's Sunset:</h5>
-//                                         <p class="card-text" id="sunset-text">The sunset time is ${set}.</p>
-//                                         <p>Kick back and relax!</p>
-//                                         <button id=remSet>X</button>
-//                                     </div>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                         `
-//     container.appendChild(newDiv)
-// }
+
