@@ -30,7 +30,7 @@
 // cached element references
 const resRise = document.getElementById('remRise')
 const resSet = document.getElementById('remSet')
-const goBtn = document.getElementById('button-addon1')
+const goBtn = document.getElementById('go')
 const container = document.getElementById('container')
 
 const sunRise = document.getElementById('sunrise-text')
