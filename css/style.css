@@ -44,15 +44,6 @@ body {
     border-radius: 12px;
 }
 
-.title {
-    background: rgba(255, 255, 255, 0.315);
-    border: 1px solid rgba(255, 255, 255, 0.474);
-    border-radius: 50px;
-    display: inline;
-    margin: auto;
-    padding: 20px;
-    font-size: 65px;
-}
 
 footer {
     color: rgb(214, 212, 212);
@@ -109,7 +100,49 @@ h5 {
     background-repeat: no-repeat;
 }
 
+.title {
+    background: rgba(255, 255, 255, 0.315);
+    border: 1px solid rgba(255, 255, 255, 0.474);
+    border-radius: 50px;
+    display: inline;
+    margin: auto;
+    padding: 20px;
+    font-size: 65px;
+}
 @media only screen and (max-width: 600px) {
+    body {
+        background-size: 200%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .card {
+        height: 20vh;
+    }
+    footer {
+        font-size: 12px;
+    }
+    .go {
+        margin: 0 auto;
+    }
+    #rise {
+        background-image: none;
+    }
+    #set {
+        background-image: none;
+    }
+    #sunrise-text {
+        font-size: 40px;
+    }
+    #sunset-text {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-height: 80px) {
     body {
         background-size: 200%;
         background-position: center;
