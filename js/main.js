@@ -35,8 +35,8 @@ const sunSet = document.getElementById('sunset-text')
 
 
 const render = (rise, set) => {
-    sunRise.innerText=`${rise}`
-    sunSet.innerText=`${set}`
+    sunRise.innerText=`${rise} UTC`
+    sunSet.innerText=`${set} UTC`
 }
 
 goBtn.addEventListener('click', () => {
