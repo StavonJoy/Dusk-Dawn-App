@@ -17,42 +17,28 @@
 	//  //use this information to call the 2nd API to return the results
     // Change time to user's location time
 // //Tweak event listeners so that the results will appear in a variable
-// add a function to handle appending the sunset card
-// add a function to handle appending the sunrise card
+// // add a function to handle appending the sunset card
+// // add a function to handle appending the sunrise card
 // style the cards with sunset/sunrise images respectively 
     // may want to consider displaying the result text over the image
     
 // create a function that translates UTC time into the user's local time 
 
 
-// variables
 
-// cached element references
-const resRise = document.getElementById('remRise')
-const resSet = document.getElementById('remSet')
 const goBtn = document.getElementById('go')
 const container = document.getElementById('container')
-
+const riseTitle = document.getElementById('rise-title')
+const setTitle = document.getElementById('set-title')
 const sunRise = document.getElementById('sunrise-text')
 const sunSet = document.getElementById('sunset-text')
 
-// event listeners
 
-// resRise.addEventListener('click', console.log('click'), () => {
-//     sunRise.innerText = ''
-// })
-// resSet.addEventListener('click', console.log('click'), remove)
-
-// functions
-// const render = (rise, set) => {
-//     sunRise.innerHTML=`The sunrise is at ${rise}`
-//     sunSet.innerHTML=`The sunset is at ${set}`
-// }
-
-const remove = (sunRise, sunSet) => {
-    sunRise.innerText = ''
-    sunSet.innerText = ''
+const render = (rise, set) => {
+    sunRise.innerText=`${rise}`
+    sunSet.innerText=`${set}`
 }
+
 goBtn.addEventListener('click', () => {
     fetch(`https://freegeoip.app/json/`)
     .then((response) => {
@@ -70,17 +56,11 @@ goBtn.addEventListener('click', () => {
     .then((data) => {
         let rise = data.results.sunrise
         let set = data.results.sunset
-        sunRise.innerText = `${rise} UTC`
-        sunSet.innerText = `${set} UTC`
+        render(rise, set)
+        // sunRise.innerText = `${rise} UTC`
+        // sunSet.innerText = `${set} UTC`
     })
     .catch((err) => {
         console.log(err)
     })
 })
-
-
-
-
-
-
-
