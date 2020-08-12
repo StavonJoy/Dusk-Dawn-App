@@ -38,10 +38,10 @@ const sunSet = document.getElementById('sunset-text')
 
 // event listeners
 
-resRise.addEventListener('click', console.log('click'), () => {
-    sunRise.innerText = ''
-})
-resSet.addEventListener('click', console.log('click'), remove)
+// resRise.addEventListener('click', console.log('click'), () => {
+//     sunRise.innerText = ''
+// })
+// resSet.addEventListener('click', console.log('click'), remove)
 
 // functions
 // const render = (rise, set) => {
@@ -77,13 +77,6 @@ goBtn.addEventListener('click', () => {
         console.log(err)
     })
 })
-
-// const date1 = new Date();
-
-// console.log(date1.getTimezoneOffset());
-
-
-
 
 
 
