@@ -1,10 +1,8 @@
 const goBtn = document.getElementById('go')
 const container = document.getElementById('container')
-const riseTitle = document.getElementById('rise-title')
-const setTitle = document.getElementById('set-title')
 const sunRise = document.getElementById('sunrise-text')
 const sunSet = document.getElementById('sunset-text')
-
+const city = document.getElementById('location')
 
 const render = (rise, set) => {
     sunRise.innerText=`${rise} UTC`
@@ -17,6 +15,8 @@ goBtn.addEventListener('click', () => {
         return response.json()
     })
     .then((data) => {
+        let location = data.city
+        city.innerText = `Hello to ${location}!`
         let latt = data.latitude
         let longt = data.longitude
         let longLatt = `lat=${latt}&lng=${longt}`

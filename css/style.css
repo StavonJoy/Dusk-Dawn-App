@@ -36,7 +36,9 @@ body {
     margin: 20px;
     text-align: center;
 }
-
+.card-body {
+    width: 30vh;
+}
 .container {
     background-color: rgba(255, 255, 255, 0.336);
     display: flex;
@@ -69,6 +71,10 @@ footer {
 
 h5 {
     font-size: 20px;
+}
+
+#location {
+    font-size: 45px;
 }
 
 .row {
@@ -142,7 +148,7 @@ h5 {
         font-size: 40px;
     }
 }
-@media only screen and (max-height: 80px) {
+@media only screen and (max-height: 770px) {
     body {
         background-size: 200%;
         background-position: center;
