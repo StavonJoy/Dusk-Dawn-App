@@ -2,16 +2,19 @@
     text-align: center;
     color: white;
     background: rgba(106, 106, 106, 0);
-    background-image: url("https://i.imgur.com/1jX8wjB.jpg");
+    /* background-image: url("https://i.imgur.com/1jX8wjB.jpg"); */
+    background-image: url("/images/pinkple.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100vh;
     width: 100%;
+    height: 300px;
 }
 
+
 body {
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(33,55,80,1) 79%);
+    background: rgb(230,97,64);
+    background: radial-gradient(circle, rgba(230,97,64,1) 9%, rgba(235,76,118,1) 78%, rgba(204,63,143,1) 97%);
     /* background: rgb(196,100,74); */
     /* background: linear-gradient(0deg, rgba(196,100,74,1) 1%, rgba(132,98,147,1) 22%, rgba(76,88,124,1) 30%, rgba(47,72,88,1) 41%, rgba(72,68,69,1) 50%, rgba(20,19,20,1) 66%); */
     height: 100vh;
@@ -38,10 +41,10 @@ body {
     border-radius: 15;
 }
 .display-4 {
-    background: rgba(70, 68, 68, 0.315);
+    background: rgba(225, 223, 223, 0.495);
     margin: 0 auto;
     display: inline;
-    padding: 15px;
+    padding: 25px;
     border-radius: 50%;
 }
 footer {
@@ -50,7 +53,7 @@ footer {
 }
 
 .row {
-    background-color: rgba(255, 255, 255, 0.214);
+    background-color: rgba(255, 255, 255, 0.514);
     margin: 20px;
     height: 40vh;
     border-radius: 15;
