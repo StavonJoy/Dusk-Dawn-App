@@ -37,7 +37,7 @@ body {
     text-align: center;
 }
 .card-body {
-    width: 30vh;
+    width: 40vh;
 }
 .container {
     background-color: rgba(255, 255, 255, 0.336);
@@ -45,7 +45,6 @@ body {
     justify-content: center;
     border-radius: 12px;
 }
-
 
 footer {
     color: rgb(214, 212, 212);
@@ -136,9 +135,11 @@ h5 {
         margin: 0 auto;
     }
     #rise {
+        align-items: center;
         background-image: none;
     }
     #set {
+        align-items: center;
         background-image: none;
     }
     #sunrise-text {
@@ -170,9 +171,11 @@ h5 {
     }
     #rise {
         background-image: none;
+        align-items: center;
     }
     #set {
         background-image: none;
+        align-items: center;
     }
     #sunrise-text {
         font-size: 40px;

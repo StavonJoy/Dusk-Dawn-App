@@ -5,9 +5,9 @@ I think sunrise and sunset are the most beatiful times of the day, so I chose to
 
 -------------
 
-### Sample Layout Design
-Here is my first draft of what the app will look like for users:
-![wireframe](images/wireframe.png "Basic layout")
+### Screenshot
+Here is what the app looks like after displaying a result:
+![Suncatcher](images/Suncatcher.png "Screenshot")
 
 -------------
 
@@ -17,15 +17,15 @@ As a user, I should be able to see the sunrise and sunset times for my location 
 -------------
 
 ### Technologies Used
-HTML, CSS, Javascript, Bootstrap,[Sunrise/Sunset API](https://sunrise-sunset.org/api), and [Location Information from Free IP Geolocation](https://freegeoip.app/json/).
+HTML, CSS, Javascript, Bootstrap,[Sunrise/Sunset API](https://sunrise-sunset.org/api), and [Location Information from Free IP Geolocation](https://freegeoip.app/json/), [Images from Pexels](https://pexels.com), and [Icons from Icon8](https://icon8.com).
 
 -------------
 
 ### Getting started
-
 Check out my app [here](https://suncatcher.surge.sh/).
 
 -------------
+
 ### Future enhancements
 I'd like to add animations where possible, and possibly weather information for the location chosen. 
 I'd also like to let the user input a specific date, and view the time of day that the sunset/sunrise occurred. 
