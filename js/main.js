@@ -4,6 +4,8 @@ const sunSet = document.getElementById('sunset-text')
 const city = document.getElementById('location')
 
 const render = (rise, set) => {
+    sunRise.classList.add('animate__animated', 'animate__bounceInUp');
+    sunSet.classList.add('animate__animated', 'animate__bounceInUp');
     sunRise.innerText=`${rise} UTC`
     sunSet.innerText=`${set} UTC`
 }
@@ -16,6 +18,7 @@ goBtn.addEventListener('click', () => {
     .then((data) => {
         let location = data.city
         city.innerText = `Hello to ${location}!`
+        city.classList.add('animate__animated', 'animate__pulse');
         let latt = data.latitude
         let longt = data.longitude
         let longLatt = `lat=${latt}&lng=${longt}`
