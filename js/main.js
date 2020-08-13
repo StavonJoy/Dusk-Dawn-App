@@ -1,5 +1,4 @@
 const goBtn = document.getElementById('go')
-const container = document.getElementById('container')
 const sunRise = document.getElementById('sunrise-text')
 const sunSet = document.getElementById('sunset-text')
 const city = document.getElementById('location')

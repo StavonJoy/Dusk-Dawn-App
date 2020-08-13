@@ -1,4 +1,4 @@
-.jumbotron {
+.header {
     text-align: center;
     color: white;
     background: rgba(106, 106, 106, 0);
@@ -6,7 +6,8 @@
     height: 300px;
     display: flex;
     flex-direction: column;
-    font-family: 'Mr Dafoe', cursive;   
+    font-family: 'Mr Dafoe', cursive;
+    
 }
 a {
     color: white;
@@ -32,7 +33,8 @@ body {
     text-align: center;
 }
 .card-body {
-    width: 40vh;
+    width: 40vh; 
+    /* 100% width / 1em font size */
 }
 .container {
     background-color: rgba(255, 255, 255, 0.336);
@@ -68,10 +70,7 @@ footer {
     margin: 20px;
     height: 40vh;
 }
-#sunset-text {
-    font-size: 50px;
-}
-#sunrise-text {
+#sunset-text, #sunrise-text {
     font-size: 50px;
 }
 #rise {
@@ -95,7 +94,7 @@ footer {
     padding: 20px;
     font-size: 65px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     body {
         background-size: 200%;
         background-position: center;
@@ -115,19 +114,13 @@ footer {
     .go {
         margin: 0 auto;
     }
-    #rise {
+    #rise, #set {
+        width: 100%;
         align-items: center;
         background-image: none;
     }
-    #set {
-        align-items: center;
-        background-image: none;
-    }
-    #sunrise-text {
-        font-size: 40px;
-    }
-    #sunset-text {
-        font-size: 40px;
+    #sunrise-text, #sunset-text {
+        font-size: 30px;
     }
 }
 @media only screen and (max-height: 770px) {
@@ -138,11 +131,11 @@ footer {
     }
     .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: 0 auto;
     }
     .card {
-        height: 20vh;
+        height: 30vh;
     }
     footer {
         font-size: 12px;
@@ -150,18 +143,19 @@ footer {
     .go {
         margin: 0 auto;
     }
-    #rise {
+    #rise, #set {
+        width: 100%;
         background-image: none;
         align-items: center;
     }
-    #set {
+    /* #set {
         background-image: none;
         align-items: center;
+    } */
+    #sunrise-text, #sunset-text {
+        font-size: 30px;
     }
-    #sunrise-text {
-        font-size: 40px;
-    }
-    #sunset-text {
-        font-size: 40px;
-    }
+    /* #sunset-text {
+        font-size: 30px;
+    } */
 }
