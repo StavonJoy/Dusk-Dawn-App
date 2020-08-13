@@ -1,14 +1,4 @@
-.header {
-    text-align: center;
-    color: white;
-    background: rgba(106, 106, 106, 0);
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Mr Dafoe', cursive;
-    
-}
+
 a {
     color: white;
     text-decoration: underline;
@@ -34,7 +24,6 @@ body {
 }
 .card-body {
     width: 40vh; 
-    /* 100% width / 1em font size */
 }
 .container {
     background-color: rgba(255, 255, 255, 0.336);
@@ -51,7 +40,7 @@ footer {
 }
 #go {
     color: white;
-    background: rgba(255, 255, 255, 0.315);
+    background: rgba(255, 255, 255, 0.541);
     border: 1px solid rgba(255, 255, 255, 0.474);
     font-size: 30px;
     margin: 10px auto;
@@ -60,6 +49,17 @@ footer {
 #go:hover {
     color: rgb(75, 68, 66);
     background-color: rgba(250, 106, 195, 0.248);
+}
+.header {
+    text-align: center;
+    color: white;
+    background: rgba(106, 106, 106, 0);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mr Dafoe', cursive;
+    
 }
 #location {
     font-size: 45px;
@@ -148,14 +148,7 @@ footer {
         background-image: none;
         align-items: center;
     }
-    /* #set {
-        background-image: none;
-        align-items: center;
-    } */
     #sunrise-text, #sunset-text {
         font-size: 30px;
     }
-    /* #sunset-text {
-        font-size: 30px;
-    } */
 }
