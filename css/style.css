@@ -6,19 +6,15 @@
     height: 300px;
     display: flex;
     flex-direction: column;
-    font-family: 'Mr Dafoe', cursive;
-    
+    font-family: 'Mr Dafoe', cursive;   
 }
-
 a {
     color: white;
     text-decoration: underline;
 }
-
 a:hover {
     color: pink;
 }
-
 body {
     height: 100vh;
     text-align: center;  
@@ -28,7 +24,6 @@ body {
     background-position-y: center;
     font-family: 'Thasadith', sans-serif;
 }
-
 .card {
     background-color: rgba(255, 255, 255, 0.404);
     border-radius: 15px;
@@ -45,7 +40,6 @@ body {
     justify-content: center;
     border-radius: 12px;
 }
-
 footer {
     color: rgb(214, 212, 212);
     margin-bottom: 0;
@@ -53,7 +47,6 @@ footer {
     font-size: 20px;
     align-self: flex-end;
 }
-
 #go {
     color: white;
     background: rgba(255, 255, 255, 0.315);
@@ -62,49 +55,37 @@ footer {
     margin: 10px auto;
     font-family: 'Thasadith', sans-serif;
 }
-
 #go:hover {
     color: rgb(75, 68, 66);
     background-color: rgba(250, 106, 195, 0.248);
 }
-
-h5 {
-    font-size: 20px;
-}
-
 #location {
     font-size: 45px;
 }
-
 .row {
     background-color: rgba(255, 255, 255, 0.651);
     border-radius: 15px;
     margin: 20px;
     height: 40vh;
 }
-
 #sunset-text {
     font-size: 50px;
 }
-
 #sunrise-text {
     font-size: 50px;
 }
-
 #rise {
     background-image: url("/images/sunrise-icon.png");
     background-size: 40%;
     background-position: bottom;
     background-repeat: no-repeat;
 }
-
 #set {
     background-image: url("/images/sunset-icon.png");
     background-size: 40%;
     background-position: bottom;
     background-repeat: no-repeat;
 }
-
 .title {
     background: rgba(255, 255, 255, 0.315);
     border: 1px solid rgba(255, 255, 255, 0.474);

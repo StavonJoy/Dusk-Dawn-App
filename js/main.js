@@ -29,8 +29,6 @@ goBtn.addEventListener('click', () => {
         let rise = data.results.sunrise
         let set = data.results.sunset
         render(rise, set)
-        // sunRise.innerText = `${rise} UTC`
-        // sunSet.innerText = `${set} UTC`
     })
     .catch((err) => {
         console.log(err)
