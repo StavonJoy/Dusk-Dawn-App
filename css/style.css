@@ -38,7 +38,7 @@ footer {
 }
 #go {
     color: white;
-    background: rgba(255, 255, 255, 0.541);
+    background: rgba(71, 71, 71, 0.541);
     border: 1px solid rgba(255, 255, 255, 0.474);
     font-size: 30px;
     margin: 10px auto;
@@ -107,7 +107,7 @@ footer {
         height: 20vh;
     }
     footer {
-        font-size: 12px;
+        font-size: 20px;
     }
     .go {
         margin: 0 auto;
@@ -115,7 +115,8 @@ footer {
     #rise, #set {
         width: 100%;
         align-items: center;
-        background-image: none;
+        /* background-image: none; */
+        background-size: 40%;
     }
     #sunrise-text, #sunset-text {
         font-size: 30px;
@@ -136,17 +137,17 @@ footer {
         height: 30vh;
     }
     footer {
-        font-size: 12px;
+        font-size: 20px;
     }
     .go {
         margin: 0 auto;
     }
     #rise, #set {
         width: 100%;
-        background-image: none;
+        background-size: 25%;
         align-items: center;
     }
     #sunrise-text, #sunset-text {
-        font-size: 30px;
+        font-size: 45px;
     }
 }
