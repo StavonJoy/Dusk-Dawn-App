@@ -57,16 +57,9 @@ footer {
     display: flex;
     flex-direction: column;
     font-family: 'Mr Dafoe', cursive;
-    
 }
 #location {
     font-size: 45px;
-}
-.row {
-    background-color: rgba(255, 255, 255, 0.651);
-    border-radius: 15px;
-    margin: 20px;
-    height: 40vh;
 }
 #sunset-text, #sunrise-text {
     font-size: 50px;
@@ -76,6 +69,12 @@ footer {
     background-size: 40%;
     background-position: bottom;
     background-repeat: no-repeat;
+}
+.row {
+    background-color: rgba(255, 255, 255, 0.651);
+    border-radius: 15px;
+    margin: 20px;
+    height: 40vh;
 }
 #set {
     background-image: url("/images/sunset-icon.png");
@@ -115,7 +114,6 @@ footer {
     #rise, #set {
         width: 100%;
         align-items: center;
-        /* background-image: none; */
         background-size: 40%;
     }
     #sunrise-text, #sunset-text {
@@ -144,7 +142,7 @@ footer {
     }
     #rise, #set {
         width: 100%;
-        background-size: 25%;
+        background-size: 30%;
         align-items: center;
     }
     #sunrise-text, #sunset-text {
