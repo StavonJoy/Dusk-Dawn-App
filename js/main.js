@@ -17,8 +17,8 @@ goBtn.addEventListener('click', () => {
     })
     .then((data) => {
         let location = data.city
-        city.innerText = `Hello to ${location}!`
         city.classList.add('animate__animated', 'animate__pulse');
+        city.innerText = `Hello to ${location}!`
         let latt = data.latitude
         let longt = data.longitude
         let longLatt = `lat=${latt}&lng=${longt}`

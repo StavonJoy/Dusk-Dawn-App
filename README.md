@@ -17,7 +17,7 @@ As a user, I should be able to see the sunrise and sunset times for my location 
 -------------
 
 ### Technologies Used
-HTML, CSS, Javascript, Bootstrap,[Sunrise/Sunset API](https://sunrise-sunset.org/api), and [Location Information from Free IP Geolocation](https://freegeoip.app/json/), [Images from Pexels](https://pexels.com), [Icons from Icon8](https://icon8.com), and [Fonts by Google](https://fonts.google.com/).
+HTML, CSS, Javascript, Bootstrap, [Sunrise/Sunset API](https://sunrise-sunset.org/api), [Location Information from Free IP Geolocation](https://freegeoip.app/json/), [Images from Pexels](https://pexels.com), [Icons from Icon8](https://icon8.com), and [Fonts by Google](https://fonts.google.com/).
 
 -------------
 
